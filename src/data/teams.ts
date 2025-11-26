@@ -34,7 +34,7 @@ export const GROUPS: GroupData = {
     A: [
         {
             id: 1,
-            name: "Acólitos P. Desamparados",
+            name: "Acólitos P. Desamparados y San José",
             status: "Confirmado",
             color: "bg-red-500",
             logo: logoDesamparados // <-- AQUÍ PONES LA RUTA DE TU IMAGEN. Ej: "/logos/desamparados.png"
@@ -64,7 +64,7 @@ export const GROUPS: GroupData = {
     B: [
         {
             id: 5,
-            name: "Acólitos P. Fátima",
+            name: "Acólitos P. Nuestra Señora de Fátima",
             status: "Locales",
             color: "bg-blue-600",
             logo: logoFatima
