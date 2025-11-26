@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ExternalLink, Menu, X, Home, FileText, Calendar } from 'lucide-react';
 import { GlassButton } from '../ui/GlassButton';
 import { Link, useLocation } from 'react-router-dom';

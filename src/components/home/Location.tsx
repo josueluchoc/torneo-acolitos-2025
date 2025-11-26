@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapPin } from 'lucide-react';
 import { GlassButton } from '../ui/GlassButton';
 import { GlassCard } from '../ui/GlassCard';

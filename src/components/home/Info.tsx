@@ -1,4 +1,3 @@
-import React from 'react';
 import { Calendar, Clock, Users, Trophy } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
 

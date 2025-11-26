@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
 export const WhatsAppButton = () => {
@@ -19,7 +19,7 @@ export const WhatsAppButton = () => {
             className={`
         fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3 transition-all duration-500 transform
         ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}
-      `}
+    `}
         >
 
             {/* Nube/Tooltip flotante */}

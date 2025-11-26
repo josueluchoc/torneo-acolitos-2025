@@ -1,4 +1,3 @@
-import React from 'react';
 import { CheckCircle, Shield } from 'lucide-react';
 import { GlassCard } from '../ui/GlassCard';
 
