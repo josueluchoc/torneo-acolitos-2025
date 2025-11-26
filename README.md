@@ -53,7 +53,7 @@ La estética está inspirada en **Glassmorphism + colores marianos (Azul, Blanco
 ## 📦 Instalación y Ejecución
 
 ```bash
-git clone https://github.com/josue-lucho-cs-projects/torneo-acolitos-2025.git
+git clone https://github.com/josueluchoc/torneo-acolitos-2025.git
 cd torneo-acolitos-2025
 npm install
 npm run dev
