@@ -2,7 +2,7 @@
 “**Peregrinantes in Spem**”
 
 <div align="center">
-Una landing page moderna, rápida y visualmente atractiva para presentar la información oficial del torneo inter‑parroquial organizado por los Acólitos **NSF**.
+Una landing page moderna, rápida y visualmente atractiva para presentar la información oficial del torneo inter‑parroquial organizado para los Acólitos NSF.
 </div>
 
 ---
