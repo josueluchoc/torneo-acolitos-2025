@@ -26,7 +26,6 @@ Una landing page moderna, rápida y visualmente atractiva para presentar la info
 
 ## 🎯 Vista Previa del Proyecto
 
-> *(Puedes reemplazar estas imágenes por capturas reales de tu landing más adelante)*
 
 <p align="center">
   <img src="https://i.postimg.cc/nc9Mz3Dk/preview.jpg" alt="Hero Preview" />
