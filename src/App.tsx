@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Inicio } from './pages/Inicio';
 import { Bases } from './pages/Bases';
 import { Fixture } from './pages/Fixture';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   return (
@@ -12,7 +13,9 @@ export default function App() {
         <Route path="/bases" element={<Bases />} />
         <Route path="/fixture" element={<Fixture />} />
       </Routes>
+      <Analytics />
     </BrowserRouter>
+    
   );
 }
 
