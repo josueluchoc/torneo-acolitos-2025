@@ -7,6 +7,7 @@ import { Details } from '../components/home/Details';
 import { Location } from '../components/home/Location';
 import { Background } from '../components/Background';
 import { WhatsAppButton } from '../components/ui/WhatsAppButton'; // <--- Importamos
+import { Analytics } from '@vercel/analytics/react';
 
 export const Inicio = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -39,6 +40,7 @@ export const Inicio = () => {
                 {/* Botón flotante de WhatsApp */}
                 <WhatsAppButton />
             </div>
+            <Analytics />
         </div>
     );
 };
