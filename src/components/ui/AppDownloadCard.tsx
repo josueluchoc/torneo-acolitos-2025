@@ -39,7 +39,7 @@ export const AppDownloadCard = () => {
                 <div className="flex items-center gap-4">
                     {/* Icono App */}
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg hover-shake">
-                        <img src="../../public/app-icon.png" alt="App Mockup" className="w-8 h-8" />
+                        <img src="https://i.postimg.cc/xdgDmmrz/app-icon.png" alt="App Mockup" className="w-8 h-8" />
                     </div>
 
                     {/* Texto */}
