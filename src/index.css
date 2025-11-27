@@ -60,3 +60,24 @@
 .delay-100 { animation-delay: 0.1s; }
 .delay-200 { animation-delay: 0.2s; }
 .delay-300 { animation-delay: 0.3s; }
+@layer utilities {
+  @keyframes shake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+  }
+  
+  /* Animación que ocurre cada 5 segundos pero dura poco */
+  .animate-shake-periodic {
+    animation: shake 0.5s ease-in-out;
+    animation-delay: 3s; /* Espera inicial */
+    /* Nota: Para que se repita infinitamente con pausas, 
+      se suele requerir JS o animaciones complejas. 
+       Por simplicidad, haremos que vibre al cargar y al pasar el mouse. */
+  }
+  
+  .hover-shake:hover {
+    animation: shake 0.5s ease-in-out infinite;
+  }
+}
