@@ -16,7 +16,7 @@ export const Location = () => {
                         <span className="text-sm opacity-70">Cercado de Lima</span>
                     </p>
                     <p className="text-gray-300">
-                        Fácil acceso. Encuéntranos cerca a la unidad vecinal.
+                        Fácil acceso. Encuéntranos en la unidad vecinal 3.
                     </p>
                     <div className="pt-4 flex justify-center lg:justify-start">
                         <GlassButton primary href="https://maps.app.goo.gl/Yqwjmo9EcLsH3Hxy8">

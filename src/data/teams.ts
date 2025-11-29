@@ -1,12 +1,14 @@
 //importamos las imagenes de los logos
 import logoDesamparados from "../../public/desamparados.png";
 import logoFatima from "../../public/fatima.png";
-import logoCristoSalvador from "../../public/cristosalvador.png";
-import logoTrinidad from "../../public/santisimatrinidad.png";
+//import logoCristoSalvador from "../../public/cristosalvador.png";
+//import logoTrinidad from "../../public/santisimatrinidad.png";
 import logoEspirituSanto from "../../public/espiritusanto.png";
 import logoLaEncarnacion from "../../public/laencarnacion.png";
 import logoSanPioX from "../../public/sanpiox.png";
 import logoSanPabloApostol from "../../public/sanpabloapostol.png";
+import logoLaMerced from "../../public/lamerced.png";
+import logoNuestraSeñoraDeLaAlegria from "../../public/nuestraseñoradelaalegria.png";
 
 // Definimos los tipos para tener autocompletado y evitar errores
 export type TeamStatus = "Confirmado" | "Por confirmar" | "Locales";
@@ -34,10 +36,10 @@ export const GROUPS: GroupData = {
     A: [
         {
             id: 1,
-            name: "Acólitos P. Desamparados y San José",
-            status: "Confirmado",
-            color: "bg-red-500",
-            logo: logoDesamparados // <-- AQUÍ PONES LA RUTA DE TU IMAGEN. Ej: "/logos/desamparados.png"
+            name: "Acólitos P. Nuestra Señora de Fátima",
+            status: "Locales",
+            color: "bg-blue-600",
+            logo: logoFatima // <-- AQUÍ PONES LA RUTA DE TU IMAGEN. Ej: "/logos/desamparados.png"
         },
         {
             id: 2,
@@ -55,33 +57,33 @@ export const GROUPS: GroupData = {
         },
         {
             id: 4,
-            name: "Acólitos P. San Pablo Apóstol",
+            name: "Acólitos P. Desamparados y San José",
             status: "Confirmado",
-            color: "bg-emerald-500",
-            logo: logoSanPabloApostol
+            color: "bg-red-500",
+            logo: logoDesamparados
         }
     ],
     B: [
         {
             id: 5,
-            name: "Acólitos P. Nuestra Señora de Fátima",
-            status: "Locales",
-            color: "bg-blue-600",
-            logo: logoFatima
+            name: "Acólitos P. San Pablo Apóstol",
+            status: "Confirmado",
+            color: "bg-emerald-500",
+            logo: logoSanPabloApostol
         },
         {
             id: 6,
-            name: "Acólitos P. Cristo Salvador",
+            name: "Acólitos P. La Merced",
             status: "Por confirmar",
             color: "bg-purple-500",
-            logo: logoCristoSalvador
+            logo: logoLaMerced
         },
         {
             id: 7,
-            name: "Acólitos P. Santísima Trinidad",
+            name: "Acólitos P. Nuestra Señora de la Alegría",
             status: "Por confirmar",
             color: "bg-pink-500",
-            logo: logoTrinidad
+            logo: logoNuestraSeñoraDeLaAlegria
         },
         {
             id: 8,
