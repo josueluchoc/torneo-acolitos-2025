@@ -3,6 +3,7 @@ import { Inicio } from './pages/Inicio';
 import { Bases } from './pages/Bases';
 import { Fixture } from './pages/Fixture';
 import { Analytics } from '@vercel/analytics/react';
+import { HallOfFame } from './pages/HallOfFame';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="/" element={<Inicio />} />
         <Route path="/bases" element={<Bases />} />
         <Route path="/fixture" element={<Fixture />} />
+        <Route path="/hall-of-fame" element={<HallOfFame />} />
       </Routes>
       <Analytics />
     </BrowserRouter>

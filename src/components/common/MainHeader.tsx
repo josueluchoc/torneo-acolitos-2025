@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ExternalLink, Menu, X, Home, FileText, Calendar } from 'lucide-react';
+import { ExternalLink, Menu, X, Home, FileText, Calendar, Trophy } from 'lucide-react'; // <--- Agregado Trophy
 import { GlassButton } from '../ui/GlassButton';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -15,6 +15,7 @@ export const MainHeader = () => {
     const navLinks = [
         { name: 'Inicio', path: '/', icon: <Home size={18} /> },
         { name: 'Fixture & Grupos', path: '/fixture', icon: <Calendar size={18} /> },
+        { name: 'Salón de la Fama', path: '/hall-of-fame', icon: <Trophy size={18} /> }, // <--- Nueva opción
         { name: 'Bases del Torneo', path: '/bases', icon: <FileText size={18} /> },
     ];
 
