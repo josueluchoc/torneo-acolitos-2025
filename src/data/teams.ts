@@ -6,9 +6,10 @@ import logoFatima from "../../public/fatima.png";
 import logoEspirituSanto from "../../public/espiritusanto.png";
 import logoLaEncarnacion from "../../public/laencarnacion.png";
 import logoSanPioX from "../../public/sanpiox.png";
-import logoSanPabloApostol from "../../public/sanpabloapostol.png";
+//import logoSanPabloApostol from "../../public/sanpabloapostol.png";
 import logoLaMerced from "../../public/lamerced.png";
 import logoNuestraSeñoraDeLaAlegria from "../../public/nuestraseñoradelaalegria.png";
+import logoDivinaMisericordia from "../../public/divinamisericordia.png";
 
 // Definimos los tipos para tener autocompletado y evitar errores
 export type TeamStatus = "Confirmado" | "Por confirmar" | "Locales";
@@ -66,10 +67,10 @@ export const GROUPS: GroupData = {
     B: [
         {
             id: 5,
-            name: "Acólitos P. San Pablo Apóstol",
-            status: "Confirmado",
-            color: "bg-emerald-500",
-            logo: logoSanPabloApostol
+            name: "Acólitos P. Divina Misericordia",
+            status: "Por confirmar",
+            color: "bg-purple-500",
+            logo: logoDivinaMisericordia
         },
         {
             id: 6,
