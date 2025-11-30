@@ -82,7 +82,7 @@ export const GROUPS: GroupData = {
         {
             id: 7,
             name: "Acólitos P. Nuestra Señora de la Alegría",
-            status: "Por confirmar",
+            status: "Confirmado",
             color: "bg-pink-500",
             logo: logoNuestraSeñoraDeLaAlegria
         },
