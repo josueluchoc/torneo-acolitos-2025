@@ -10,7 +10,7 @@ import logoSanPioX from "../../public/sanpiox.png";
 import logoLaMerced from "../../public/lamerced.png";
 import logoNuestraSeñoraDeLaAlegria from "../../public/nuestraseñoradelaalegria.png";
 //import logoDivinaMisericordia from "../../public/divinamisericordia.png";
-import logoSanPabloApostol from "../../public/sanpabloapostolbreña.png";
+import logoSanPabloApostolBreña from "../../public/sanpabloapostolbreña.png";
 
 // Definimos los tipos para tener autocompletado y evitar errores
 export type TeamStatus = "Confirmado" | "Por confirmar" | "Locales";
@@ -71,7 +71,7 @@ export const GROUPS: GroupData = {
             name: "Acólitos P. San Pablo Apostol",
             status: "Por confirmar",
             color: "bg-purple-500",
-            logo: logoSanPabloApostol
+            logo: logoSanPabloApostolBreña
         },
         {
             id: 6,
