@@ -9,7 +9,7 @@ import logoSanPioX from "../../public/sanpiox.png";
 //import logoSanPabloApostol from "../../public/sanpabloapostol.png";
 import logoLaMerced from "../../public/lamerced.png";
 import logoNuestraSeñoraDeLaAlegria from "../../public/nuestraseñoradelaalegria.png";
-import logoDivinaMisericordia from "../../public/divinamisericordia.png";
+//import logoDivinaMisericordia from "../../public/divinamisericordia.png";
 import logoSanPabloApostol from "../../public/sanpabloapostolbreña.png";
 
 // Definimos los tipos para tener autocompletado y evitar errores
