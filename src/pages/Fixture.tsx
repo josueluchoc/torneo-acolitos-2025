@@ -6,6 +6,7 @@ import { GlassCard } from '../components/ui/GlassCard';
 import { Trophy, MapPin, Clock } from 'lucide-react';
 import { GROUPS, getAllTeams } from '../data/teams'; // <--- Importamos la data
 import type { Team } from '../data/teams';
+import { TeamStatusBadge } from '../components/ui/TeamStatusBadge';
 
 // --- DATA MATCHES (Esto se queda aquí o podría ir a otro archivo 'matches.ts') ---
 const matchesData = [
@@ -142,7 +143,7 @@ export const Fixture = () => {
                                             <TeamAvatar team={team} />
                                             <div>
                                                 <p className="font-bold text-lg">{team.name}</p>
-                                                <span className="text-xs px-2 py-0.5 rounded bg-white/10 text-blue-200">{team.status}</span>
+                                                <TeamStatusBadge status={team.status} />
                                             </div>
                                         </div>
                                     ))}
@@ -158,7 +159,7 @@ export const Fixture = () => {
                                             <TeamAvatar team={team} />
                                             <div>
                                                 <p className="font-bold text-lg">{team.name}</p>
-                                                <span className="text-xs px-2 py-0.5 rounded bg-white/10 text-blue-200">{team.status}</span>
+                                                <TeamStatusBadge status={team.status} />
                                             </div>
                                         </div>
                                     ))}

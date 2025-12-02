@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
   font-family: "SF Display";
   font-weight: 400;
@@ -15,41 +16,67 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 /* --- ANIMACIONES PERSONALIZADAS --- */
 @layer utilities {
+
   /* Efecto de Sacudida (Shake) para la Card de la App */
   @keyframes shake {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(-5deg); }
-    50% { transform: rotate(5deg); }
-    75% { transform: rotate(-5deg); }
+
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(-5deg);
+    }
+
+    50% {
+      transform: rotate(5deg);
+    }
+
+    75% {
+      transform: rotate(-5deg);
+    }
   }
-  
+
   .animate-shake-periodic {
     animation: shake 0.5s ease-in-out;
     animation-delay: 3s;
   }
-  
+
   .hover-shake:hover {
     animation: shake 0.5s ease-in-out infinite;
   }
 
   /* Efecto de Blob (Formas orgánicas) para el fondo */
   @keyframes blob {
-    0% { transform: translate(0px, 0px) scale(1); }
-    33% { transform: translate(30px, -50px) scale(1.1); }
-    66% { transform: translate(-20px, 20px) scale(0.9); }
-    100% { transform: translate(0px, 0px) scale(1); }
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
   }
-  
+
   .animate-blob {
     animation: blob 10s infinite;
   }
-  
+
   .animation-delay-2000 {
     animation-delay: 2s;
   }
-  
+
   .animation-delay-4000 {
     animation-delay: 4s;
   }
@@ -60,6 +87,7 @@
       opacity: 0;
       transform: translate3d(0, -20px, 0);
     }
+
     to {
       opacity: 1;
       transform: translate3d(0, 0, 0);
@@ -71,6 +99,7 @@
       opacity: 0;
       transform: translate3d(0, 20px, 0);
     }
+
     to {
       opacity: 1;
       transform: translate3d(0, 0, 0);
@@ -91,19 +120,30 @@
 
   /* --- ANIMACIÓN DEL TELÓN ROJO --- */
   @keyframes curtainOpenLeft {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
   }
 
   @keyframes curtainOpenRight {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(100%); }
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(100%);
+    }
   }
 
   /* Telón Izquierdo: Se mueve a la izquierda y desaparece */
   .animate-curtain-left {
     animation: curtainOpenLeft 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    animation-delay: 0.5s; /* Pequeña pausa inicial antes de abrir */
+    animation-delay: 0.5s;
+    /* Pequeña pausa inicial antes de abrir */
   }
 
   /* Telón Derecho: Se mueve a la derecha y desaparece */
@@ -111,15 +151,43 @@
     animation: curtainOpenRight 2.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     animation-delay: 0.5s;
   }
-  
+
   /* Desvanecer el contenedor del telón */
   @keyframes fadeOutCurtainContainer {
-    0% { opacity: 1; visibility: visible; }
-    90% { opacity: 1; visibility: visible; }
-    100% { opacity: 0; visibility: hidden; }
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    90% {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
   }
-  
+
   .animate-curtain-container-fade {
-     animation: fadeOutCurtainContainer 3s ease-in-out forwards;
+    animation: fadeOutCurtainContainer 3s ease-in-out forwards;
+  }
+
+  /* Loading Dots Animation */
+  @keyframes bounce-custom {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-3px);
+    }
+  }
+
+  .animate-bounce-custom {
+    animation: bounce-custom 0.6s infinite;
   }
 }
