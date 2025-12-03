@@ -19,7 +19,7 @@ export const Details = () => {
                         </div>
                         <div className="flex items-start gap-4">
                             <CheckCircle className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
-                            <p>Está organizado por el grupo de acólitos de la parroquia <strong className="text-white">Nuestra Señora del Rosario de Fátima</strong> (Cercado de Lima).</p>
+                            <p>Está organizado por el grupo de acólitos de la parroquia <strong className="text-white">Nuestra Señora de Fátima</strong> (Cercado de Lima).</p>
                         </div>
                         <div className="flex items-start gap-4">
                             <CheckCircle className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
