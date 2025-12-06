@@ -4,7 +4,7 @@ import { MainHeader } from '../components/common/MainHeader';
 import { MainFooter } from '../components/common/MainFooter';
 import { GlassCard } from '../components/ui/GlassCard';
 import { Trophy, MapPin, Clock } from 'lucide-react';
-import { GROUPS, getAllTeams } from '../data/teams'; // <--- Importamos la data
+import { GROUPS, getAllTeams } from '../data/teams';
 import type { Team } from '../data/teams';
 import { TeamStatusBadge } from '../components/ui/TeamStatusBadge';
 
@@ -66,21 +66,26 @@ const MatchCard = ({ match, allTeams }: { match: any, allTeams: Team[] }) => {
     if (!team1 || !team2) return null;
 
     return (
-        <div className="flex items-center justify-between bg-white/5 p-3 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
-            <div className="flex items-center gap-3 w-1/3">
+        <div className="flex items-center justify-between bg-white/5 p-2 md:p-3 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+            {/* Team 1 */}
+            <div className="flex flex-col items-center justify-center gap-1 md:gap-2 w-1/3 text-center">
                 <TeamAvatar team={team1} size="sm" />
-                <span className="text-xs md:text-sm text-blue-100 truncate hidden md:block">{team1.name.replace("Acólitos P. ", "")}</span>
-                <span className="text-xs md:text-sm text-blue-100 md:hidden">{team1.name.replace("Acólitos P. ", "").substring(0, 3)}..</span>
+                <span className="text-[10px] sm:text-xs md:text-sm text-blue-100 leading-tight w-full">
+                    {team1.name.replace("Acólitos P. ", "")}
+                </span>
             </div>
 
-            <div className="flex flex-col items-center justify-center w-1/3">
-                <span className="text-xs text-yellow-500 font-mono mb-1">{match.time} AM</span>
-                <div className="bg-black/30 px-3 py-1 rounded text-xs text-gray-400">VS</div>
+            {/* Time & VS */}
+            <div className="flex flex-col items-center justify-center w-1/3 shrink-0">
+                <span className="text-[10px] md:text-xs text-yellow-500 font-mono mb-1">{match.time} AM</span>
+                <div className="bg-black/30 px-2 md:px-3 py-1 rounded text-[10px] md:text-xs text-gray-400">VS</div>
             </div>
 
-            <div className="flex items-center gap-3 w-1/3 justify-end">
-                <span className="text-xs md:text-sm text-blue-100 truncate text-right hidden md:block">{team2.name.replace("Acólitos P. ", "")}</span>
-                <span className="text-xs md:text-sm text-blue-100 text-right md:hidden">{team2.name.replace("Acólitos P. ", "").substring(0, 3)}..</span>
+            {/* Team 2 */}
+            <div className="flex flex-col-reverse items-center justify-center gap-1 md:gap-2 w-1/3 text-center">
+                <span className="text-[10px] sm:text-xs md:text-sm text-blue-100 leading-tight w-full">
+                    {team2.name.replace("Acólitos P. ", "")}
+                </span>
                 <TeamAvatar team={team2} size="sm" />
             </div>
         </div>
@@ -106,7 +111,7 @@ export const Fixture = () => {
             <div className="relative z-10">
                 <MainHeader />
 
-                <main className="pt-32 pb-20 px-4 md:px-6 max-w-5xl mx-auto space-y-8">
+                <main className="pt-32 pb-20 px-4 md:px-8 max-w-[98%] mx-auto space-y-8">
 
                     <div className="text-center animate-fade-in-down">
                         <h1 className="text-4xl md:text-5xl font-black text-white mb-2">FIXTURE OFICIAL</h1>
@@ -172,20 +177,22 @@ export const Fixture = () => {
                     {activeTab === 'schedule' && (
                         <div className="space-y-8 animate-fade-in-up">
 
-                            {/* Phase Matches */}
-                            {['Fecha 1', 'Fecha 2', 'Fecha 3'].map((phase, idx) => (
-                                <GlassCard key={phase} className="p-6" delay={idx * 100}>
-                                    <div className="flex items-center gap-2 mb-4">
-                                        <Clock className="text-yellow-400" />
-                                        <h3 className="text-xl font-bold">{phase}</h3>
-                                    </div>
-                                    <div className="space-y-3">
-                                        {matchesData.filter(m => m.phase === phase).map(match => (
-                                            <MatchCard key={match.id} match={match} allTeams={allTeams} />
-                                        ))}
-                                    </div>
-                                </GlassCard>
-                            ))}
+                            {/* Phase Matches Grid */}
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                                {['Fecha 1', 'Fecha 2', 'Fecha 3'].map((phase, idx) => (
+                                    <GlassCard key={phase} className="p-4 md:p-6 h-full" delay={idx * 100}>
+                                        <div className="flex items-center gap-2 mb-4">
+                                            <Clock className="text-yellow-400 shrink-0" size={20} />
+                                            <h3 className="text-lg md:text-xl font-bold truncate">{phase}</h3>
+                                        </div>
+                                        <div className="space-y-3">
+                                            {matchesData.filter(m => m.phase === phase).map(match => (
+                                                <MatchCard key={match.id} match={match} allTeams={allTeams} />
+                                            ))}
+                                        </div>
+                                    </GlassCard>
+                                ))}
+                            </div>
 
                             {/* Finals */}
                             <GlassCard className="p-6 bg-gradient-to-br from-yellow-900/40 to-black/40 border-yellow-500/30" delay={400}>

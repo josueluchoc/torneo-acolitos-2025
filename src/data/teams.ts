@@ -83,7 +83,7 @@ export const GROUPS: GroupData = {
         },
         {
             id: 7,
-            name: "Acólitos P. Nuestra Señora de la Alegría",
+            name: "Acólitos P. Nuestra Sra. de la Alegría",
             status: "Confirmado",
             color: "bg-pink-500",
             logo: logoNuestraSeñoraDeLaAlegria
