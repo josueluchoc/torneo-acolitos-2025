@@ -3,14 +3,14 @@ import logoDesamparados from "../../public/desamparados.png";
 import logoFatima from "../../public/fatima.png";
 //import logoCristoSalvador from "../../public/cristosalvador.png";
 //import logoTrinidad from "../../public/santisimatrinidad.png";
-import logoEspirituSanto from "../../public/espiritusanto.png";
+//import logoEspirituSanto from "../../public/espiritusanto.png";
 import logoLaEncarnacion from "../../public/laencarnacion.png";
 import logoSanPioX from "../../public/sanpiox.png";
 //import logoSanPabloApostol from "../../public/sanpabloapostol.png";
 import logoLaMerced from "../../public/lamerced.png";
 import logoNuestraSeñoraDeLaAlegria from "../../public/nuestraseñoradelaalegria.png";
 //import logoDivinaMisericordia from "../../public/divinamisericordia.png";
-//import logoSanPabloApostolBreña from "../../public/sanpabloapostolbreña.png";
+import logoSanPabloApostolBreña from "../../public/sanpabloapostolbreña.png";
 import logoJesusNazareno from "../../public/pjjesusnazareno.jpg";
 
 // Definimos los tipos para tener autocompletado y evitar errores
@@ -90,10 +90,10 @@ export const GROUPS: GroupData = {
         },
         {
             id: 8,
-            name: "Acólitos P. Espíritu Santo",
+            name: "Acólitos P. San Pablo Apostol",
             status: "Confirmado",
             color: "bg-cyan-500",
-            logo: logoEspirituSanto
+            logo: logoSanPabloApostolBreña
         }
     ]
 };
