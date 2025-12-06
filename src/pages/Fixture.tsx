@@ -138,15 +138,15 @@ export const Fixture = () => {
 
                     {/* GROUPS VIEW */}
                     {activeTab === 'groups' && (
-                        <div className="grid md:grid-cols-2 gap-8 animate-fade-in-up">
+                        <div className="grid md:grid-cols-2 gap-8 animate-fade-in-up max-w-5xl mx-auto">
                             {/* Group A */}
                             <GlassCard className="p-6">
                                 <h3 className="text-2xl font-bold text-center mb-6 text-yellow-400 border-b border-white/10 pb-4">GRUPO A</h3>
-                                <div className="space-y-4">
+                                <div className="space-y-4 flex flex-col">
                                     {GROUPS.A.map((team) => (
-                                        <div key={team.id} className="flex items-center gap-4 p-2 rounded-lg hover:bg-white/5 transition-colors">
+                                        <div key={team.id} className="flex items-center gap-4 p-2 rounded-lg hover:bg-white/5 transition-colors w-full">
                                             <TeamAvatar team={team} />
-                                            <div>
+                                            <div className="text-left">
                                                 <p className="font-bold text-lg">{team.name}</p>
                                                 <TeamStatusBadge status={team.status} />
                                             </div>
@@ -158,11 +158,11 @@ export const Fixture = () => {
                             {/* Group B */}
                             <GlassCard className="p-6" delay={100}>
                                 <h3 className="text-2xl font-bold text-center mb-6 text-blue-400 border-b border-white/10 pb-4">GRUPO B</h3>
-                                <div className="space-y-4">
+                                <div className="space-y-4 flex flex-col">
                                     {GROUPS.B.map((team) => (
-                                        <div key={team.id} className="flex items-center gap-4 p-2 rounded-lg hover:bg-white/5 transition-colors">
+                                        <div key={team.id} className="flex items-center gap-4 p-2 rounded-lg hover:bg-white/5 transition-colors w-full">
                                             <TeamAvatar team={team} />
-                                            <div>
+                                            <div className="text-left">
                                                 <p className="font-bold text-lg">{team.name}</p>
                                                 <TeamStatusBadge status={team.status} />
                                             </div>
